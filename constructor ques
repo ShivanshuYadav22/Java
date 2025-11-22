@@ -1,0 +1,22 @@
+class Car {
+    String brand;
+    int price;
+
+    
+    Car(String b, int p) {
+        brand = b;
+        price = p;
+    }
+
+    void show() {
+        System.out.println("Brand: " + brand + ", Price: " + price);
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car("BMW", 5000000);
+        Car c2 = new Car("Audi", 4500000);
+
+        c1.show();
+        c2.show();
+    }
+}
