@@ -1,0 +1,14 @@
+import java.util.*;
+public class StudentList {
+ public static void main(String[] args) {
+ ArrayList<String> students = new ArrayList<>();
+ students.add("James");
+ students.add("Aman");
+ students.add("Priya");
+ students.add("Rohan");
+ students.add("Neha");
+ for(String name : students) {
+ System.out.println(name);
+ }
+ }
+}
