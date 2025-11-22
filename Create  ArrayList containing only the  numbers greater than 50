@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+public class ArrayList {
+ public static ArrayList<Integer> filterList(ArrayList<Integer> list) {
+ ArrayList<Integer> filtered = new ArrayList<>();
+ for (int num : list) {
+ if (num > 50) {
+ filtered.add(num);
+ }
+ }
+ return filtered;
+ }
+ public static void main(String[] args) {
+ ArrayList<Integer> data = new ArrayList<>();
+ data.add(45);
+ data.add(99);
+ data.add(10);
+ data.add(65);
+ ArrayList<Integer> result = filterList(data);
+ System.out.println("Original: " + data);
+ System.out.println("Filtered: " + result); 
+ }
+}
