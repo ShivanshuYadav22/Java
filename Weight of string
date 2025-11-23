@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+class UserMainCode {
+
+    public int weightOfString(String input1, int input2) {
+        int totalWeight = 0;
+        String vowels = "aeiouAEIOU";
+
+        for (char c : input1.toCharArray()) {
+            if (Character.isLetter(c)) {
+                int weight = 0;
+                if (Character.isUpperCase(c)) {
+                    weight = c - 'A' + 1;
+                } else {
+                    weight = c - 'a' + 1;
+                if (input2 == 0 && vowels.indexOf(c) != -1) { 
+                   
+                } else {
+                    totalWeight += weight;
+                }
+            }
+           }
+        return totalWeight;
+    }
+}
